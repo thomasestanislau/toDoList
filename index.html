@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>To Do List</h1>
+        </header>
+
+        <form id="FormInput">
+            <p>Adicione a tarefa:</p>
+            <div class="control"> 
+                <input type="text" id="receber" placeholder="Digite a tarefa">
+                <button type="submit">
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+        </form>
+
+        <form id="edit-form" class="hide">
+            <p>Edite a tarefa:</p>
+            <div class="control">
+                <input id="edit-input" type="text" placeholder="Edite a tarefa">
+                <button type="submit">
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+            <button id="cancelEditBtn" class="cancel">Cancelar</button>
+        </form>
+
+        <div class="container2">
+            <div class="search">
+                <form>
+                    <p>Pesquisar:</p>
+                    <div class="control-search">
+                        <input id="search-input" type="text" placeholder="Pesquisar:">
+                        <button id="erase-search">
+                            <i class="fa-solid fa-delete-left"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="filter">
+                <p>Filtrar:</p>
+                <select id="filter-options" name="options">
+                    <option value="all">Todos</option>
+                    <option value="done">Feitos</option>
+                    <option value="to-do">Pendente</option>
+                </select>
+            </div>
+        </div>
+
+
+        <div id="list">
+            
+        </div>
+    </div> 
+    <script src="script.js"></script>
+</body>
+
+
+</html>
